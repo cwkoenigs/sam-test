@@ -1,0 +1,71 @@
+{
+  "generator": "generate_synthetic_auth_data.py",
+  "seed": 20261014,
+  "n_conversations": 10000,
+  "no_id_frac_requested": 0.2,
+  "max_tokens_per_chunk": 200,
+  "min_tokens_per_chunk": 48,
+  "token_counter": "tokenizers:/Users/sam/models/bert-base-uncased/vocab.txt",
+  "labels": [
+    "ID_AUTH",
+    "OTHER_AUTH",
+    "NO_AUTH"
+  ],
+  "conversations_by_auth_type": {
+    "ID_AUTH": 8000,
+    "OTHER_AUTH": 2000
+  },
+  "splits": {
+    "train": {
+      "conversations": 8000,
+      "conversations_by_auth_type": {
+        "ID_AUTH": 6400,
+        "OTHER_AUTH": 1600
+      },
+      "chunks": 20373,
+      "labels": {
+        "NO_AUTH": 12373,
+        "ID_AUTH": 6400,
+        "OTHER_AUTH": 1600
+      },
+      "max_chunk_tokens": 194,
+      "mean_chunk_tokens": 83.4
+    },
+    "validation": {
+      "conversations": 1000,
+      "conversations_by_auth_type": {
+        "ID_AUTH": 800,
+        "OTHER_AUTH": 200
+      },
+      "chunks": 2513,
+      "labels": {
+        "ID_AUTH": 800,
+        "NO_AUTH": 1513,
+        "OTHER_AUTH": 200
+      },
+      "max_chunk_tokens": 193,
+      "mean_chunk_tokens": 84.1
+    },
+    "test": {
+      "conversations": 1000,
+      "conversations_by_auth_type": {
+        "ID_AUTH": 800,
+        "OTHER_AUTH": 200
+      },
+      "chunks": 2539,
+      "labels": {
+        "NO_AUTH": 1539,
+        "ID_AUTH": 800,
+        "OTHER_AUTH": 200
+      },
+      "max_chunk_tokens": 193,
+      "mean_chunk_tokens": 83.2
+    }
+  },
+  "chunks_total": 25425,
+  "labels_total": {
+    "NO_AUTH": 15425,
+    "ID_AUTH": 8000,
+    "OTHER_AUTH": 2000
+  }
+}

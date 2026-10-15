@@ -1,0 +1,219 @@
+{
+  "model": "/Users/sam/Developer/sam-test/models/roberta-call-classifier/best",
+  "n_validation": 10000,
+  "n_test": 9999,
+  "test_bce_loss": 0.0002786285028357255,
+  "at_threshold_0.5": {
+    "micro_f1": 0.9998715808398613,
+    "micro_precision": 0.9999357862967957,
+    "micro_recall": 0.9998073836276083,
+    "macro_f1": 0.9998353606659948,
+    "subset_accuracy": 0.9995999599959996,
+    "hamming_loss": 5.714857200005715e-05,
+    "per_label": {
+      "BILLING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2942,
+        "threshold": 0.5
+      },
+      "CLAIM_STATUS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2795,
+        "threshold": 0.5
+      },
+      "COVERAGE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2574,
+        "threshold": 0.5
+      },
+      "COMPLAINTS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1921,
+        "threshold": 0.5
+      },
+      "PRIOR_AUTH": {
+        "precision": 0.9995150339476236,
+        "recall": 1.0,
+        "f1": 0.9997574581615328,
+        "support": 2061,
+        "threshold": 0.5
+      },
+      "NEMT": {
+        "precision": 1.0,
+        "recall": 0.9993808049535604,
+        "f1": 0.9996903065964695,
+        "support": 1615,
+        "threshold": 0.5
+      },
+      "TECHNICAL_ISSUE": {
+        "precision": 1.0,
+        "recall": 0.9988002399520096,
+        "f1": 0.9993997599039616,
+        "support": 1667,
+        "threshold": 0.5
+      }
+    }
+  },
+  "at_tuned_thresholds": {
+    "micro_f1": 0.999839481203249,
+    "micro_precision": 0.9998715808398613,
+    "micro_recall": 0.9998073836276083,
+    "macro_f1": 0.999792524964143,
+    "subset_accuracy": 0.9994999499949995,
+    "hamming_loss": 7.143571500007143e-05,
+    "per_label": {
+      "BILLING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2942,
+        "threshold": 0.05
+      },
+      "CLAIM_STATUS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2795,
+        "threshold": 0.35
+      },
+      "COVERAGE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2574,
+        "threshold": 0.05
+      },
+      "COMPLAINTS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1921,
+        "threshold": 0.4
+      },
+      "PRIOR_AUTH": {
+        "precision": 0.9995150339476236,
+        "recall": 1.0,
+        "f1": 0.9997574581615328,
+        "support": 2061,
+        "threshold": 0.05
+      },
+      "NEMT": {
+        "precision": 1.0,
+        "recall": 0.9993808049535604,
+        "f1": 0.9996903065964695,
+        "support": 1615,
+        "threshold": 0.05
+      },
+      "TECHNICAL_ISSUE": {
+        "precision": 0.9993997599039616,
+        "recall": 0.9988002399520096,
+        "f1": 0.9990999099909991,
+        "support": 1667,
+        "threshold": 0.05
+      }
+    }
+  },
+  "primary_label": {
+    "accuracy": 0.7297729772977297,
+    "labels": [
+      "BILLING",
+      "CLAIM_STATUS",
+      "COVERAGE",
+      "COMPLAINTS",
+      "PRIOR_AUTH",
+      "NEMT",
+      "TECHNICAL_ISSUE"
+    ],
+    "confusion_rows_true_cols_pred": [
+      [
+        1637,
+        181,
+        29,
+        70,
+        41,
+        36,
+        102
+      ],
+      [
+        105,
+        1448,
+        71,
+        48,
+        57,
+        40,
+        33
+      ],
+      [
+        147,
+        142,
+        1058,
+        63,
+        182,
+        57,
+        54
+      ],
+      [
+        76,
+        107,
+        15,
+        641,
+        51,
+        76,
+        40
+      ],
+      [
+        38,
+        102,
+        60,
+        37,
+        1007,
+        37,
+        26
+      ],
+      [
+        39,
+        23,
+        51,
+        68,
+        53,
+        821,
+        27
+      ],
+      [
+        109,
+        75,
+        33,
+        40,
+        32,
+        29,
+        685
+      ]
+    ]
+  },
+  "by_noise_level": {
+    "low": {
+      "n": 3038,
+      "subset_accuracy": 1.0,
+      "primary_accuracy": 0.7356813693219223
+    },
+    "medium": {
+      "n": 4548,
+      "subset_accuracy": 0.9995602462620933,
+      "primary_accuracy": 0.7196569920844327
+    },
+    "high": {
+      "n": 2413,
+      "subset_accuracy": 0.998756734355574,
+      "primary_accuracy": 0.7414007459593867
+    }
+  },
+  "seconds": 91.2
+}

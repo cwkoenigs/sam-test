@@ -1,0 +1,29 @@
+{
+  "labels": [
+    "BILLING",
+    "CLAIM_STATUS",
+    "COVERAGE",
+    "COMPLAINTS",
+    "PRIOR_AUTH",
+    "NEMT",
+    "TECHNICAL_ISSUE"
+  ],
+  "label2id": {
+    "BILLING": 0,
+    "CLAIM_STATUS": 1,
+    "COVERAGE": 2,
+    "COMPLAINTS": 3,
+    "PRIOR_AUTH": 4,
+    "NEMT": 5,
+    "TECHNICAL_ISSUE": 6
+  },
+  "descriptions": {
+    "BILLING": "premium invoices, payments, autopay, refunds, balances owed to the plan or a provider",
+    "CLAIM_STATUS": "status, denial, reprocessing or appeal of a submitted medical/pharmacy claim",
+    "COVERAGE": "whether a service, drug or provider is covered; deductible, copay, network, referral questions",
+    "COMPLAINTS": "dissatisfaction with the plan, a provider, a vendor or a prior interaction; grievances; supervisor requests",
+    "PRIOR_AUTH": "prior authorization requests, status, denials, expedited review, peer-to-peer",
+    "NEMT": "non-emergency medical transportation: scheduling, cancelling, late/no-show rides, mileage reimbursement",
+    "TECHNICAL_ISSUE": "member portal / mobile app login, password, ID card download, errors, missing data online"
+  }
+}

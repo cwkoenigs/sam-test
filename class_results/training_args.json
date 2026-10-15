@@ -1,0 +1,33 @@
+{
+  "cache": "/Users/sam/Developer/sam-test/class_train/cache",
+  "results": "/Users/sam/Developer/sam-test/class_results",
+  "model_out": "/Users/sam/Developer/sam-test/models/roberta-call-classifier",
+  "epochs": 20,
+  "batch_size": 32,
+  "eval_batch_size": 64,
+  "max_tokens_per_batch": 8192,
+  "length_bucket": 64,
+  "lr": 3e-05,
+  "warmup_ratio": 0.05,
+  "restart_cycles": 4,
+  "max_grad_norm": 1.0,
+  "pos_weight": false,
+  "seed": 42,
+  "device": "mps",
+  "limit": 0,
+  "steps_per_epoch": 2689,
+  "total_steps": 53780,
+  "warmup_steps": 2689,
+  "optimizer": "Adam",
+  "loss": "BCEWithLogitsLoss",
+  "scheduler": "cosine_with_hard_restarts_with_warmup",
+  "labels": [
+    "BILLING",
+    "CLAIM_STATUS",
+    "COVERAGE",
+    "COMPLAINTS",
+    "PRIOR_AUTH",
+    "NEMT",
+    "TECHNICAL_ISSUE"
+  ]
+}

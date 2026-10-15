@@ -1,0 +1,149 @@
+{
+  "generator": "generate_ner_data.py",
+  "seed": 20261014,
+  "n_calls": 100000,
+  "entity_types": {
+    "PERSON_NAME": {
+      "gliner": "person name",
+      "pii": true,
+      "pci": false
+    },
+    "PROVIDER_NAME": {
+      "gliner": "healthcare provider name",
+      "pii": false,
+      "pci": false
+    },
+    "PROVIDER_NPI": {
+      "gliner": "provider npi number",
+      "pii": false,
+      "pci": false
+    },
+    "DATE_OF_BIRTH": {
+      "gliner": "date of birth",
+      "pii": true,
+      "pci": false
+    },
+    "ADDRESS": {
+      "gliner": "street address",
+      "pii": true,
+      "pci": false
+    },
+    "SSN": {
+      "gliner": "social security number",
+      "pii": true,
+      "pci": false
+    },
+    "CARD_NUMBER": {
+      "gliner": "credit card number",
+      "pii": false,
+      "pci": true
+    },
+    "CARD_CVV": {
+      "gliner": "card security code",
+      "pii": false,
+      "pci": true
+    },
+    "CARD_EXPIRATION": {
+      "gliner": "card expiration date",
+      "pii": false,
+      "pci": true
+    },
+    "MEMBER_ID": {
+      "gliner": "member id number",
+      "pii": false,
+      "pci": false
+    },
+    "PHONE_NUMBER": {
+      "gliner": "phone number",
+      "pii": true,
+      "pci": false
+    }
+  },
+  "pci_types": [
+    "CARD_NUMBER",
+    "CARD_CVV",
+    "CARD_EXPIRATION"
+  ],
+  "splits": {
+    "train": 80000,
+    "validation": 10000,
+    "test": 10000
+  },
+  "entity_counts": {
+    "PERSON_NAME": 204076,
+    "MEMBER_ID": 51040,
+    "DATE_OF_BIRTH": 52764,
+    "ADDRESS": 67668,
+    "PHONE_NUMBER": 32164,
+    "CARD_NUMBER": 42188,
+    "CARD_EXPIRATION": 38009,
+    "CARD_CVV": 38009,
+    "PROVIDER_NAME": 46063,
+    "PROVIDER_NPI": 19301,
+    "SSN": 17126
+  },
+  "entities_total": 608408,
+  "calls_with_pci": 38009,
+  "scenarios": {
+    "address_update": 11971,
+    "card_payment": 29996,
+    "payment_and_provider": 8013,
+    "ssn_verification": 17126,
+    "provider_lookup": 15020,
+    "general_no_pii": 4043,
+    "claim_inquiry": 13831
+  },
+  "noise_levels": {
+    "low": 40042,
+    "medium": 39967,
+    "high": 19991
+  },
+  "entity_formats": {
+    "ADDRESS:full": 33671,
+    "ADDRESS:no_state": 20180,
+    "ADDRESS:no_zip": 13817,
+    "CARD_CVV:raw_digits": 20858,
+    "CARD_CVV:spoken_words": 17151,
+    "CARD_EXPIRATION:mm yy": 5561,
+    "CARD_EXPIRATION:mm/yy": 11391,
+    "CARD_EXPIRATION:mmyy": 3756,
+    "CARD_EXPIRATION:month words": 7712,
+    "CARD_EXPIRATION:month yyyy": 5734,
+    "CARD_EXPIRATION:spoken_words": 3855,
+    "CARD_NUMBER:dashed_digits": 4162,
+    "CARD_NUMBER:grouped_digits": 12757,
+    "CARD_NUMBER:mixed": 6372,
+    "CARD_NUMBER:raw_digits": 6271,
+    "CARD_NUMBER:spoken_words": 12626,
+    "DATE_OF_BIRTH:m/d/yyyy": 5327,
+    "DATE_OF_BIRTH:mm dd yyyy": 7730,
+    "DATE_OF_BIRTH:month d yyyy": 7971,
+    "DATE_OF_BIRTH:month dd yyyy": 10620,
+    "DATE_OF_BIRTH:spoken_words": 5287,
+    "DATE_OF_BIRTH:words": 15829,
+    "MEMBER_ID:grouped_digits": 15279,
+    "MEMBER_ID:raw_digits": 20351,
+    "MEMBER_ID:spoken_words": 15410,
+    "PERSON_NAME:first": 100000,
+    "PERSON_NAME:full": 104076,
+    "PHONE_NUMBER:dashed": 4831,
+    "PHONE_NUMBER:grouped_digits": 14457,
+    "PHONE_NUMBER:raw_digits": 3205,
+    "PHONE_NUMBER:spoken_words": 9671,
+    "PROVIDER_NAME:": 46063,
+    "PROVIDER_NPI:grouped_digits": 5782,
+    "PROVIDER_NPI:raw_digits": 9695,
+    "PROVIDER_NPI:spoken_words": 3824,
+    "SSN:dashed": 5045,
+    "SSN:grouped_digits": 4375,
+    "SSN:raw_digits": 1675,
+    "SSN:spoken_words": 6031
+  },
+  "words_per_call": {
+    "min": 42,
+    "p50": 127,
+    "p90": 176,
+    "max": 299
+  },
+  "seconds": 7.4
+}

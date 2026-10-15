@@ -1,0 +1,149 @@
+{
+  "generator": "generate_class_data.py",
+  "seed": 20261014,
+  "n_calls": 100000,
+  "labels": [
+    "BILLING",
+    "CLAIM_STATUS",
+    "COVERAGE",
+    "COMPLAINTS",
+    "PRIOR_AUTH",
+    "NEMT",
+    "TECHNICAL_ISSUE"
+  ],
+  "label_descriptions": {
+    "BILLING": "premium invoices, payments, autopay, refunds, balances owed to the plan or a provider",
+    "CLAIM_STATUS": "status, denial, reprocessing or appeal of a submitted medical/pharmacy claim",
+    "COVERAGE": "whether a service, drug or provider is covered; deductible, copay, network, referral questions",
+    "COMPLAINTS": "dissatisfaction with the plan, a provider, a vendor or a prior interaction; grievances; supervisor requests",
+    "PRIOR_AUTH": "prior authorization requests, status, denials, expedited review, peer-to-peer",
+    "NEMT": "non-emergency medical transportation: scheduling, cancelling, late/no-show rides, mileage reimbursement",
+    "TECHNICAL_ISSUE": "member portal / mobile app login, password, ID card download, errors, missing data online"
+  },
+  "token_counter": "transformers:/Users/sam/models/roberta-base",
+  "max_tokens": 512,
+  "regenerated_over_length": 0,
+  "splits": {
+    "train": {
+      "calls": 80001,
+      "primary_label": {
+        "BILLING": 16773,
+        "COMPLAINTS": 8054,
+        "NEMT": 8661,
+        "PRIOR_AUTH": 10452,
+        "CLAIM_STATUS": 14411,
+        "COVERAGE": 13630,
+        "TECHNICAL_ISSUE": 8020
+      },
+      "multilabel_counts": {
+        "BILLING": 23679,
+        "CLAIM_STATUS": 21919,
+        "COMPLAINTS": 15298,
+        "NEMT": 12767,
+        "COVERAGE": 20718,
+        "PRIOR_AUTH": 16424,
+        "TECHNICAL_ISSUE": 13158
+      },
+      "labels_per_call": {
+        "1": 44046,
+        "2": 27948,
+        "3": 8007
+      },
+      "noise_level": {
+        "high": 20142,
+        "medium": 35843,
+        "low": 24016
+      },
+      "roberta_tokens": {
+        "min": 73,
+        "p50": 196,
+        "p90": 294,
+        "p99": 371,
+        "max": 488,
+        "mean": 207.2,
+        "over_512": 0
+      }
+    },
+    "validation": {
+      "calls": 10000,
+      "primary_label": {
+        "COMPLAINTS": 1007,
+        "CLAIM_STATUS": 1801,
+        "BILLING": 2097,
+        "COVERAGE": 1704,
+        "PRIOR_AUTH": 1306,
+        "NEMT": 1083,
+        "TECHNICAL_ISSUE": 1002
+      },
+      "multilabel_counts": {
+        "CLAIM_STATUS": 2707,
+        "COMPLAINTS": 1947,
+        "BILLING": 2966,
+        "COVERAGE": 2607,
+        "PRIOR_AUTH": 2070,
+        "NEMT": 1591,
+        "TECHNICAL_ISSUE": 1665
+      },
+      "labels_per_call": {
+        "1": 5451,
+        "2": 3545,
+        "3": 1004
+      },
+      "noise_level": {
+        "low": 2955,
+        "medium": 4504,
+        "high": 2541
+      },
+      "roberta_tokens": {
+        "min": 76,
+        "p50": 197,
+        "p90": 294,
+        "p99": 372,
+        "max": 462,
+        "mean": 208.0,
+        "over_512": 0
+      }
+    },
+    "test": {
+      "calls": 9999,
+      "primary_label": {
+        "BILLING": 2096,
+        "COMPLAINTS": 1006,
+        "CLAIM_STATUS": 1802,
+        "PRIOR_AUTH": 1307,
+        "NEMT": 1082,
+        "COVERAGE": 1703,
+        "TECHNICAL_ISSUE": 1003
+      },
+      "multilabel_counts": {
+        "BILLING": 2942,
+        "COMPLAINTS": 1921,
+        "CLAIM_STATUS": 2795,
+        "COVERAGE": 2574,
+        "PRIOR_AUTH": 2061,
+        "NEMT": 1615,
+        "TECHNICAL_ISSUE": 1667
+      },
+      "labels_per_call": {
+        "1": 5495,
+        "2": 3432,
+        "3": 1072
+      },
+      "noise_level": {
+        "high": 2413,
+        "low": 3038,
+        "medium": 4548
+      },
+      "roberta_tokens": {
+        "min": 82,
+        "p50": 197,
+        "p90": 297,
+        "p99": 372,
+        "max": 475,
+        "mean": 208.2,
+        "over_512": 0
+      }
+    }
+  },
+  "seconds": 17.3
+}

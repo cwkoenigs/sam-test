@@ -1,0 +1,2150 @@
+{
+  "split": "test",
+  "n_calls": 400,
+  "threshold": 0.5,
+  "model": "/Users/sam/models/gliner_base",
+  "results": {
+    "baseline": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": false,
+        "normalize": false,
+        "rules": false,
+        "rules_exclusive": false,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.4015,
+        "recall": 0.5506,
+        "f1": 0.4644
+      },
+      "macro_f1_partial": 0.3141,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.2875,
+            "recall": 0.1776,
+            "f1": 0.2196
+          },
+          "exact": {
+            "precision": 0.1812,
+            "recall": 0.112,
+            "f1": 0.1384
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.262,
+            "recall": 0.3182,
+            "f1": 0.2874
+          },
+          "exact": {
+            "precision": 0.262,
+            "recall": 0.3182,
+            "f1": 0.2874
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.5231,
+            "recall": 0.2208,
+            "f1": 0.3105
+          },
+          "exact": {
+            "precision": 0.5231,
+            "recall": 0.2208,
+            "f1": 0.3105
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.125,
+            "recall": 0.0174,
+            "f1": 0.0306
+          },
+          "exact": {
+            "precision": 0.125,
+            "recall": 0.0174,
+            "f1": 0.0306
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.4899,
+            "recall": 0.8854,
+            "f1": 0.6308
+          },
+          "exact": {
+            "precision": 0.4841,
+            "recall": 0.875,
+            "f1": 0.6234
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.4175,
+            "recall": 0.399,
+            "f1": 0.4081
+          },
+          "exact": {
+            "precision": 0.4175,
+            "recall": 0.399,
+            "f1": 0.4081
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.4949,
+            "recall": 0.9509,
+            "f1": 0.651
+          },
+          "exact": {
+            "precision": 0.4866,
+            "recall": 0.9349,
+            "f1": 0.64
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.408,
+            "recall": 0.6777,
+            "f1": 0.5093
+          },
+          "exact": {
+            "precision": 0.408,
+            "recall": 0.6777,
+            "f1": 0.5093
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.1832,
+            "recall": 0.3763,
+            "f1": 0.2465
+          },
+          "exact": {
+            "precision": 0.1832,
+            "recall": 0.3763,
+            "f1": 0.2465
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.0566,
+            "recall": 0.075,
+            "f1": 0.0645
+          },
+          "exact": {
+            "precision": 0.0566,
+            "recall": 0.075,
+            "f1": 0.0645
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.1,
+            "recall": 0.0938,
+            "f1": 0.0968
+          },
+          "exact": {
+            "precision": 0.1,
+            "recall": 0.0938,
+            "f1": 0.0968
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.8025,
+        "recall": 0.8442,
+        "f1": 0.8228,
+        "tp": 130,
+        "fp": 32,
+        "fn": 24,
+        "tn": 214
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0236,
+        "ADDRESS:no_state": 0.1579,
+        "ADDRESS:no_zip": 0.5536,
+        "CARD_CVV:raw_digits": 0.4607,
+        "CARD_CVV:spoken_words": 0.1231,
+        "CARD_EXPIRATION:mm yy": 0.1429,
+        "CARD_EXPIRATION:mm/yy": 0.4815,
+        "CARD_EXPIRATION:mmyy": 0.0,
+        "CARD_EXPIRATION:month words": 0.1111,
+        "CARD_EXPIRATION:month yyyy": 0.0952,
+        "CARD_EXPIRATION:spoken_words": 0.0,
+        "CARD_NUMBER:dashed_digits": 0.0,
+        "CARD_NUMBER:grouped_digits": 0.04,
+        "CARD_NUMBER:mixed": 0.0,
+        "CARD_NUMBER:raw_digits": 0.0476,
+        "CARD_NUMBER:spoken_words": 0.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 0.9583,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.0526,
+        "DATE_OF_BIRTH:words": 0.9464,
+        "MEMBER_ID:grouped_digits": 0.2258,
+        "MEMBER_ID:raw_digits": 0.7976,
+        "MEMBER_ID:spoken_words": 0.0,
+        "PERSON_NAME:first": 0.9075,
+        "PERSON_NAME:full": 0.9928,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9434,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.0,
+        "PROVIDER_NAME:": 0.3763,
+        "PROVIDER_NPI:grouped_digits": 0.0625,
+        "PROVIDER_NPI:raw_digits": 0.1379,
+        "PROVIDER_NPI:spoken_words": 0.0,
+        "SSN:dashed": 0.0435,
+        "SSN:grouped_digits": 0.1111,
+        "SSN:raw_digits": 0.6,
+        "SSN:spoken_words": 0.0
+      },
+      "seconds": 33.3
+    },
+    "strip_tags": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": true,
+        "normalize": false,
+        "rules": false,
+        "rules_exclusive": false,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.4303,
+        "recall": 0.5807,
+        "f1": 0.4943
+      },
+      "macro_f1_partial": 0.3492,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.1993,
+            "recall": 0.2355,
+            "f1": 0.2159
+          },
+          "exact": {
+            "precision": 0.1046,
+            "recall": 0.1236,
+            "f1": 0.1133
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.1894,
+            "recall": 0.3247,
+            "f1": 0.2392
+          },
+          "exact": {
+            "precision": 0.1894,
+            "recall": 0.3247,
+            "f1": 0.2392
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.4253,
+            "recall": 0.2403,
+            "f1": 0.3071
+          },
+          "exact": {
+            "precision": 0.4253,
+            "recall": 0.2403,
+            "f1": 0.3071
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.3111,
+            "recall": 0.0814,
+            "f1": 0.129
+          },
+          "exact": {
+            "precision": 0.3111,
+            "recall": 0.0814,
+            "f1": 0.129
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.392,
+            "recall": 0.9167,
+            "f1": 0.5491
+          },
+          "exact": {
+            "precision": 0.3808,
+            "recall": 0.8906,
+            "f1": 0.5335
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.6646,
+            "recall": 0.5172,
+            "f1": 0.5817
+          },
+          "exact": {
+            "precision": 0.6646,
+            "recall": 0.5172,
+            "f1": 0.5817
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.6867,
+            "recall": 0.9693,
+            "f1": 0.8039
+          },
+          "exact": {
+            "precision": 0.6623,
+            "recall": 0.9349,
+            "f1": 0.7753
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.4171,
+            "recall": 0.686,
+            "f1": 0.5187
+          },
+          "exact": {
+            "precision": 0.4171,
+            "recall": 0.686,
+            "f1": 0.5187
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.2137,
+            "recall": 0.2849,
+            "f1": 0.2442
+          },
+          "exact": {
+            "precision": 0.2137,
+            "recall": 0.2849,
+            "f1": 0.2442
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.0354,
+            "recall": 0.1,
+            "f1": 0.0523
+          },
+          "exact": {
+            "precision": 0.0354,
+            "recall": 0.1,
+            "f1": 0.0523
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.1604,
+            "recall": 0.2656,
+            "f1": 0.2
+          },
+          "exact": {
+            "precision": 0.1604,
+            "recall": 0.2656,
+            "f1": 0.2
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.689,
+        "recall": 0.9351,
+        "f1": 0.7934,
+        "tp": 144,
+        "fp": 65,
+        "fn": 10,
+        "tn": 181
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0472,
+        "ADDRESS:no_state": 0.2632,
+        "ADDRESS:no_zip": 0.625,
+        "CARD_CVV:raw_digits": 0.5169,
+        "CARD_CVV:spoken_words": 0.0615,
+        "CARD_EXPIRATION:mm yy": 0.3333,
+        "CARD_EXPIRATION:mm/yy": 0.4444,
+        "CARD_EXPIRATION:mmyy": 0.0909,
+        "CARD_EXPIRATION:month words": 0.1111,
+        "CARD_EXPIRATION:month yyyy": 0.0952,
+        "CARD_EXPIRATION:spoken_words": 0.0,
+        "CARD_NUMBER:dashed_digits": 0.1429,
+        "CARD_NUMBER:grouped_digits": 0.08,
+        "CARD_NUMBER:mixed": 0.0,
+        "CARD_NUMBER:raw_digits": 0.3333,
+        "CARD_NUMBER:spoken_words": 0.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 1.0,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.2105,
+        "DATE_OF_BIRTH:words": 0.9821,
+        "MEMBER_ID:grouped_digits": 0.4677,
+        "MEMBER_ID:raw_digits": 0.9048,
+        "MEMBER_ID:spoken_words": 0.0,
+        "PERSON_NAME:first": 0.965,
+        "PERSON_NAME:full": 0.9734,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9623,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.0,
+        "PROVIDER_NAME:": 0.2849,
+        "PROVIDER_NPI:grouped_digits": 0.0938,
+        "PROVIDER_NPI:raw_digits": 0.1724,
+        "PROVIDER_NPI:spoken_words": 0.0,
+        "SSN:dashed": 0.1739,
+        "SSN:grouped_digits": 0.5556,
+        "SSN:raw_digits": 0.6,
+        "SSN:spoken_words": 0.0
+      },
+      "seconds": 33.3
+    },
+    "normalize_digits": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": false,
+        "normalize": true,
+        "rules": false,
+        "rules_exclusive": false,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.438,
+        "recall": 0.6107,
+        "f1": 0.5101
+      },
+      "macro_f1_partial": 0.3743,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.3554,
+            "recall": 0.2278,
+            "f1": 0.2776
+          },
+          "exact": {
+            "precision": 0.1867,
+            "recall": 0.1197,
+            "f1": 0.1459
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.3814,
+            "recall": 0.4805,
+            "f1": 0.4253
+          },
+          "exact": {
+            "precision": 0.3763,
+            "recall": 0.474,
+            "f1": 0.4195
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.55,
+            "recall": 0.2143,
+            "f1": 0.3084
+          },
+          "exact": {
+            "precision": 0.55,
+            "recall": 0.2143,
+            "f1": 0.3084
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.1111,
+            "recall": 0.0116,
+            "f1": 0.0211
+          },
+          "exact": {
+            "precision": 0.1111,
+            "recall": 0.0116,
+            "f1": 0.0211
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.5396,
+            "recall": 0.9219,
+            "f1": 0.6808
+          },
+          "exact": {
+            "precision": 0.5366,
+            "recall": 0.9167,
+            "f1": 0.6769
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.423,
+            "recall": 0.6897,
+            "f1": 0.5243
+          },
+          "exact": {
+            "precision": 0.423,
+            "recall": 0.6897,
+            "f1": 0.5243
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.5298,
+            "recall": 0.9509,
+            "f1": 0.6804
+          },
+          "exact": {
+            "precision": 0.5222,
+            "recall": 0.9373,
+            "f1": 0.6708
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.4578,
+            "recall": 0.9421,
+            "f1": 0.6162
+          },
+          "exact": {
+            "precision": 0.4578,
+            "recall": 0.9421,
+            "f1": 0.6162
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.1754,
+            "recall": 0.3763,
+            "f1": 0.2393
+          },
+          "exact": {
+            "precision": 0.1754,
+            "recall": 0.3763,
+            "f1": 0.2393
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.0706,
+            "recall": 0.075,
+            "f1": 0.0727
+          },
+          "exact": {
+            "precision": 0.0706,
+            "recall": 0.075,
+            "f1": 0.0727
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.2963,
+            "recall": 0.25,
+            "f1": 0.2712
+          },
+          "exact": {
+            "precision": 0.2963,
+            "recall": 0.25,
+            "f1": 0.2712
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.7673,
+        "recall": 0.7922,
+        "f1": 0.7796,
+        "tp": 122,
+        "fp": 37,
+        "fn": 32,
+        "tn": 209
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0787,
+        "ADDRESS:no_state": 0.2105,
+        "ADDRESS:no_zip": 0.5893,
+        "CARD_CVV:raw_digits": 0.4944,
+        "CARD_CVV:spoken_words": 0.4615,
+        "CARD_EXPIRATION:mm yy": 0.1429,
+        "CARD_EXPIRATION:mm/yy": 0.4815,
+        "CARD_EXPIRATION:mmyy": 0.0,
+        "CARD_EXPIRATION:month words": 0.037,
+        "CARD_EXPIRATION:month yyyy": 0.1429,
+        "CARD_EXPIRATION:spoken_words": 0.0,
+        "CARD_NUMBER:dashed_digits": 0.0,
+        "CARD_NUMBER:grouped_digits": 0.02,
+        "CARD_NUMBER:mixed": 0.0,
+        "CARD_NUMBER:raw_digits": 0.0476,
+        "CARD_NUMBER:spoken_words": 0.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 0.9583,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.3158,
+        "DATE_OF_BIRTH:words": 0.9821,
+        "MEMBER_ID:grouped_digits": 0.3226,
+        "MEMBER_ID:raw_digits": 0.8095,
+        "MEMBER_ID:spoken_words": 0.9123,
+        "PERSON_NAME:first": 0.91,
+        "PERSON_NAME:full": 0.9903,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9623,
+        "PHONE_NUMBER:raw_digits": 0.8889,
+        "PHONE_NUMBER:spoken_words": 0.8889,
+        "PROVIDER_NAME:": 0.3763,
+        "PROVIDER_NPI:grouped_digits": 0.0625,
+        "PROVIDER_NPI:raw_digits": 0.1034,
+        "PROVIDER_NPI:spoken_words": 0.0526,
+        "SSN:dashed": 0.0435,
+        "SSN:grouped_digits": 0.1111,
+        "SSN:raw_digits": 0.6,
+        "SSN:spoken_words": 0.5556
+      },
+      "seconds": 26.7
+    },
+    "rules": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": false,
+        "normalize": false,
+        "rules": true,
+        "rules_exclusive": false,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.478,
+        "recall": 0.6824,
+        "f1": 0.5622
+      },
+      "macro_f1_partial": 0.5375,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.2875,
+            "recall": 0.1776,
+            "f1": 0.2196
+          },
+          "exact": {
+            "precision": 0.1812,
+            "recall": 0.112,
+            "f1": 0.1384
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.4052,
+            "recall": 0.6104,
+            "f1": 0.487
+          },
+          "exact": {
+            "precision": 0.4052,
+            "recall": 0.6104,
+            "f1": 0.487
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.8037,
+            "recall": 0.8506,
+            "f1": 0.8265
+          },
+          "exact": {
+            "precision": 0.7669,
+            "recall": 0.8117,
+            "f1": 0.7886
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.8142,
+            "recall": 0.5349,
+            "f1": 0.6456
+          },
+          "exact": {
+            "precision": 0.8142,
+            "recall": 0.5349,
+            "f1": 0.6456
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.6115,
+            "recall": 0.8854,
+            "f1": 0.7234
+          },
+          "exact": {
+            "precision": 0.6043,
+            "recall": 0.875,
+            "f1": 0.7149
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.5329,
+            "recall": 0.399,
+            "f1": 0.4563
+          },
+          "exact": {
+            "precision": 0.5329,
+            "recall": 0.399,
+            "f1": 0.4563
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.4949,
+            "recall": 0.9509,
+            "f1": 0.651
+          },
+          "exact": {
+            "precision": 0.4866,
+            "recall": 0.9349,
+            "f1": 0.64
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.5899,
+            "recall": 0.6777,
+            "f1": 0.6308
+          },
+          "exact": {
+            "precision": 0.5899,
+            "recall": 0.6777,
+            "f1": 0.6308
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.1832,
+            "recall": 0.3763,
+            "f1": 0.2465
+          },
+          "exact": {
+            "precision": 0.1832,
+            "recall": 0.3763,
+            "f1": 0.2465
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.3529,
+            "recall": 0.675,
+            "f1": 0.4635
+          },
+          "exact": {
+            "precision": 0.3529,
+            "recall": 0.675,
+            "f1": 0.4635
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.4831,
+            "recall": 0.6719,
+            "f1": 0.5621
+          },
+          "exact": {
+            "precision": 0.4831,
+            "recall": 0.6719,
+            "f1": 0.5621
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.8636,
+        "recall": 0.987,
+        "f1": 0.9212,
+        "tp": 152,
+        "fp": 24,
+        "fn": 2,
+        "tn": 222
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0236,
+        "ADDRESS:no_state": 0.1579,
+        "ADDRESS:no_zip": 0.5536,
+        "CARD_CVV:raw_digits": 0.9663,
+        "CARD_CVV:spoken_words": 0.1231,
+        "CARD_EXPIRATION:mm yy": 0.9524,
+        "CARD_EXPIRATION:mm/yy": 0.9815,
+        "CARD_EXPIRATION:mmyy": 1.0,
+        "CARD_EXPIRATION:month words": 1.0,
+        "CARD_EXPIRATION:month yyyy": 0.9524,
+        "CARD_EXPIRATION:spoken_words": 0.0,
+        "CARD_NUMBER:dashed_digits": 1.0,
+        "CARD_NUMBER:grouped_digits": 1.0,
+        "CARD_NUMBER:mixed": 0.0,
+        "CARD_NUMBER:raw_digits": 1.0,
+        "CARD_NUMBER:spoken_words": 0.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 0.9583,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.0526,
+        "DATE_OF_BIRTH:words": 0.9464,
+        "MEMBER_ID:grouped_digits": 0.2258,
+        "MEMBER_ID:raw_digits": 0.7976,
+        "MEMBER_ID:spoken_words": 0.0,
+        "PERSON_NAME:first": 0.9075,
+        "PERSON_NAME:full": 0.9928,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9434,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.0,
+        "PROVIDER_NAME:": 0.3763,
+        "PROVIDER_NPI:grouped_digits": 0.8125,
+        "PROVIDER_NPI:raw_digits": 0.9655,
+        "PROVIDER_NPI:spoken_words": 0.0,
+        "SSN:dashed": 0.913,
+        "SSN:grouped_digits": 0.9444,
+        "SSN:raw_digits": 1.0,
+        "SSN:spoken_words": 0.0
+      },
+      "seconds": 25.0
+    },
+    "normalize+rules": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": false,
+        "normalize": true,
+        "rules": true,
+        "rules_exclusive": false,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.5452,
+        "recall": 0.8045,
+        "f1": 0.6499
+      },
+      "macro_f1_partial": 0.6696,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.3554,
+            "recall": 0.2278,
+            "f1": 0.2776
+          },
+          "exact": {
+            "precision": 0.1867,
+            "recall": 0.1197,
+            "f1": 0.1459
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.5676,
+            "recall": 0.9545,
+            "f1": 0.7119
+          },
+          "exact": {
+            "precision": 0.5676,
+            "recall": 0.9545,
+            "f1": 0.7119
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.8409,
+            "recall": 0.961,
+            "f1": 0.897
+          },
+          "exact": {
+            "precision": 0.8068,
+            "recall": 0.9221,
+            "f1": 0.8606
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.9198,
+            "recall": 1.0,
+            "f1": 0.9582
+          },
+          "exact": {
+            "precision": 0.9198,
+            "recall": 1.0,
+            "f1": 0.9582
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.6887,
+            "recall": 0.9219,
+            "f1": 0.7884
+          },
+          "exact": {
+            "precision": 0.6848,
+            "recall": 0.9167,
+            "f1": 0.784
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.6278,
+            "recall": 0.6897,
+            "f1": 0.6573
+          },
+          "exact": {
+            "precision": 0.6278,
+            "recall": 0.6897,
+            "f1": 0.6573
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.5298,
+            "recall": 0.9509,
+            "f1": 0.6804
+          },
+          "exact": {
+            "precision": 0.5222,
+            "recall": 0.9373,
+            "f1": 0.6708
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.6514,
+            "recall": 0.9421,
+            "f1": 0.7703
+          },
+          "exact": {
+            "precision": 0.6514,
+            "recall": 0.9421,
+            "f1": 0.7703
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.1754,
+            "recall": 0.3763,
+            "f1": 0.2393
+          },
+          "exact": {
+            "precision": 0.1754,
+            "recall": 0.3763,
+            "f1": 0.2393
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.473,
+            "recall": 0.875,
+            "f1": 0.614
+          },
+          "exact": {
+            "precision": 0.473,
+            "recall": 0.875,
+            "f1": 0.614
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.6629,
+            "recall": 0.9219,
+            "f1": 0.7712
+          },
+          "exact": {
+            "precision": 0.6629,
+            "recall": 0.9219,
+            "f1": 0.7712
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.837,
+        "recall": 1.0,
+        "f1": 0.9112,
+        "tp": 154,
+        "fp": 30,
+        "fn": 0,
+        "tn": 216
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0787,
+        "ADDRESS:no_state": 0.2105,
+        "ADDRESS:no_zip": 0.5893,
+        "CARD_CVV:raw_digits": 0.9663,
+        "CARD_CVV:spoken_words": 0.9385,
+        "CARD_EXPIRATION:mm yy": 0.9524,
+        "CARD_EXPIRATION:mm/yy": 0.9815,
+        "CARD_EXPIRATION:mmyy": 1.0,
+        "CARD_EXPIRATION:month words": 1.0,
+        "CARD_EXPIRATION:month yyyy": 0.9524,
+        "CARD_EXPIRATION:spoken_words": 0.85,
+        "CARD_NUMBER:dashed_digits": 1.0,
+        "CARD_NUMBER:grouped_digits": 1.0,
+        "CARD_NUMBER:mixed": 1.0,
+        "CARD_NUMBER:raw_digits": 1.0,
+        "CARD_NUMBER:spoken_words": 1.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 0.9583,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.3158,
+        "DATE_OF_BIRTH:words": 0.9821,
+        "MEMBER_ID:grouped_digits": 0.3226,
+        "MEMBER_ID:raw_digits": 0.8095,
+        "MEMBER_ID:spoken_words": 0.9123,
+        "PERSON_NAME:first": 0.91,
+        "PERSON_NAME:full": 0.9903,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9623,
+        "PHONE_NUMBER:raw_digits": 0.8889,
+        "PHONE_NUMBER:spoken_words": 0.8889,
+        "PROVIDER_NAME:": 0.3763,
+        "PROVIDER_NPI:grouped_digits": 0.8125,
+        "PROVIDER_NPI:raw_digits": 0.9655,
+        "PROVIDER_NPI:spoken_words": 0.8421,
+        "SSN:dashed": 0.913,
+        "SSN:grouped_digits": 0.9444,
+        "SSN:raw_digits": 1.0,
+        "SSN:spoken_words": 0.8889
+      },
+      "seconds": 24.8
+    },
+    "all_fixes": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": true,
+        "normalize": true,
+        "rules": true,
+        "rules_exclusive": false,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.559,
+        "recall": 0.8295,
+        "f1": 0.6679
+      },
+      "macro_f1_partial": 0.6373,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.3036,
+            "recall": 0.3552,
+            "f1": 0.3274
+          },
+          "exact": {
+            "precision": 0.1221,
+            "recall": 0.1429,
+            "f1": 0.1317
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.4792,
+            "recall": 0.974,
+            "f1": 0.6424
+          },
+          "exact": {
+            "precision": 0.4792,
+            "recall": 0.974,
+            "f1": 0.6424
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.7327,
+            "recall": 0.961,
+            "f1": 0.8315
+          },
+          "exact": {
+            "precision": 0.7327,
+            "recall": 0.961,
+            "f1": 0.8315
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.8821,
+            "recall": 1.0,
+            "f1": 0.9373
+          },
+          "exact": {
+            "precision": 0.8821,
+            "recall": 1.0,
+            "f1": 0.9373
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.5109,
+            "recall": 0.974,
+            "f1": 0.6703
+          },
+          "exact": {
+            "precision": 0.5,
+            "recall": 0.9531,
+            "f1": 0.6559
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.7778,
+            "recall": 0.7586,
+            "f1": 0.7681
+          },
+          "exact": {
+            "precision": 0.7778,
+            "recall": 0.7586,
+            "f1": 0.7681
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.6855,
+            "recall": 0.9693,
+            "f1": 0.8031
+          },
+          "exact": {
+            "precision": 0.6612,
+            "recall": 0.9349,
+            "f1": 0.7746
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.6032,
+            "recall": 0.9421,
+            "f1": 0.7355
+          },
+          "exact": {
+            "precision": 0.5926,
+            "recall": 0.9256,
+            "f1": 0.7226
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.2165,
+            "recall": 0.2957,
+            "f1": 0.25
+          },
+          "exact": {
+            "precision": 0.2165,
+            "recall": 0.2957,
+            "f1": 0.25
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.2593,
+            "recall": 0.875,
+            "f1": 0.4
+          },
+          "exact": {
+            "precision": 0.2593,
+            "recall": 0.875,
+            "f1": 0.4
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.4958,
+            "recall": 0.9219,
+            "f1": 0.6448
+          },
+          "exact": {
+            "precision": 0.4958,
+            "recall": 0.9219,
+            "f1": 0.6448
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.7586,
+        "recall": 1.0,
+        "f1": 0.8627,
+        "tp": 154,
+        "fp": 49,
+        "fn": 0,
+        "tn": 197
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.1102,
+        "ADDRESS:no_state": 0.4605,
+        "ADDRESS:no_zip": 0.7679,
+        "CARD_CVV:raw_digits": 0.9775,
+        "CARD_CVV:spoken_words": 0.9692,
+        "CARD_EXPIRATION:mm yy": 1.0,
+        "CARD_EXPIRATION:mm/yy": 0.963,
+        "CARD_EXPIRATION:mmyy": 0.9091,
+        "CARD_EXPIRATION:month words": 1.0,
+        "CARD_EXPIRATION:month yyyy": 0.9524,
+        "CARD_EXPIRATION:spoken_words": 0.9,
+        "CARD_NUMBER:dashed_digits": 1.0,
+        "CARD_NUMBER:grouped_digits": 1.0,
+        "CARD_NUMBER:mixed": 1.0,
+        "CARD_NUMBER:raw_digits": 1.0,
+        "CARD_NUMBER:spoken_words": 1.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 1.0,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.7368,
+        "DATE_OF_BIRTH:words": 1.0,
+        "MEMBER_ID:grouped_digits": 0.4516,
+        "MEMBER_ID:raw_digits": 0.8929,
+        "MEMBER_ID:spoken_words": 0.8947,
+        "PERSON_NAME:first": 0.9625,
+        "PERSON_NAME:full": 0.9758,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9623,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.8611,
+        "PROVIDER_NAME:": 0.2957,
+        "PROVIDER_NPI:grouped_digits": 0.8125,
+        "PROVIDER_NPI:raw_digits": 0.9655,
+        "PROVIDER_NPI:spoken_words": 0.8421,
+        "SSN:dashed": 0.8696,
+        "SSN:grouped_digits": 0.9444,
+        "SSN:raw_digits": 1.0,
+        "SSN:spoken_words": 0.9444
+      },
+      "seconds": 22.0
+    },
+    "all_fixes+tuned_labels": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": true,
+        "normalize": true,
+        "rules": true,
+        "rules_exclusive": false,
+        "label_set": "tuned"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "doctor or clinic name",
+        "npi number",
+        "cvv security code",
+        "member id",
+        "telephone number",
+        "street address with city",
+        "card expiration date",
+        "social security number",
+        "payment card number",
+        "person's full name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.6672,
+        "recall": 0.7974,
+        "f1": 0.7265
+      },
+      "macro_f1_partial": 0.6702,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.3462,
+            "recall": 0.1737,
+            "f1": 0.2314
+          },
+          "exact": {
+            "precision": 0.1462,
+            "recall": 0.0734,
+            "f1": 0.0977
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.6463,
+            "recall": 0.961,
+            "f1": 0.7728
+          },
+          "exact": {
+            "precision": 0.6463,
+            "recall": 0.961,
+            "f1": 0.7728
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.925,
+            "recall": 0.961,
+            "f1": 0.9427
+          },
+          "exact": {
+            "precision": 0.925,
+            "recall": 0.961,
+            "f1": 0.9427
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 0.8113,
+            "recall": 1.0,
+            "f1": 0.8958
+          },
+          "exact": {
+            "precision": 0.8113,
+            "recall": 1.0,
+            "f1": 0.8958
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.5646,
+            "recall": 0.9792,
+            "f1": 0.7162
+          },
+          "exact": {
+            "precision": 0.5526,
+            "recall": 0.9583,
+            "f1": 0.701
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.873,
+            "recall": 0.2709,
+            "f1": 0.4135
+          },
+          "exact": {
+            "precision": 0.873,
+            "recall": 0.2709,
+            "f1": 0.4135
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.7692,
+            "recall": 0.9742,
+            "f1": 0.8596
+          },
+          "exact": {
+            "precision": 0.7507,
+            "recall": 0.9509,
+            "f1": 0.839
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.464,
+            "recall": 0.9587,
+            "f1": 0.6253
+          },
+          "exact": {
+            "precision": 0.456,
+            "recall": 0.9421,
+            "f1": 0.6146
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.9512,
+            "recall": 0.629,
+            "f1": 0.7573
+          },
+          "exact": {
+            "precision": 0.9512,
+            "recall": 0.629,
+            "f1": 0.7573
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 0.6364,
+            "recall": 0.875,
+            "f1": 0.7368
+          },
+          "exact": {
+            "precision": 0.6364,
+            "recall": 0.875,
+            "f1": 0.7368
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 0.2699,
+            "recall": 0.9531,
+            "f1": 0.4207
+          },
+          "exact": {
+            "precision": 0.2699,
+            "recall": 0.9531,
+            "f1": 0.4207
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 0.9506,
+        "recall": 1.0,
+        "f1": 0.9747,
+        "tp": 154,
+        "fp": 8,
+        "fn": 0,
+        "tn": 238
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0472,
+        "ADDRESS:no_state": 0.1974,
+        "ADDRESS:no_zip": 0.4286,
+        "CARD_CVV:raw_digits": 0.9775,
+        "CARD_CVV:spoken_words": 0.9385,
+        "CARD_EXPIRATION:mm yy": 1.0,
+        "CARD_EXPIRATION:mm/yy": 0.963,
+        "CARD_EXPIRATION:mmyy": 0.9091,
+        "CARD_EXPIRATION:month words": 1.0,
+        "CARD_EXPIRATION:month yyyy": 0.9524,
+        "CARD_EXPIRATION:spoken_words": 0.9,
+        "CARD_NUMBER:dashed_digits": 1.0,
+        "CARD_NUMBER:grouped_digits": 1.0,
+        "CARD_NUMBER:mixed": 1.0,
+        "CARD_NUMBER:raw_digits": 1.0,
+        "CARD_NUMBER:spoken_words": 1.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 1.0,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.7895,
+        "DATE_OF_BIRTH:words": 1.0,
+        "MEMBER_ID:grouped_digits": 0.0484,
+        "MEMBER_ID:raw_digits": 0.3571,
+        "MEMBER_ID:spoken_words": 0.386,
+        "PERSON_NAME:first": 0.9725,
+        "PERSON_NAME:full": 0.9758,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9811,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.8889,
+        "PROVIDER_NAME:": 0.629,
+        "PROVIDER_NPI:grouped_digits": 0.8125,
+        "PROVIDER_NPI:raw_digits": 0.9655,
+        "PROVIDER_NPI:spoken_words": 0.8421,
+        "SSN:dashed": 0.913,
+        "SSN:grouped_digits": 0.9444,
+        "SSN:raw_digits": 1.0,
+        "SSN:spoken_words": 1.0
+      },
+      "seconds": 22.5
+    },
+    "all_fixes+rules_exclusive": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": true,
+        "normalize": true,
+        "rules": true,
+        "rules_exclusive": true,
+        "label_set": "default"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "healthcare provider name",
+        "provider npi number",
+        "card security code",
+        "member id number",
+        "phone number",
+        "street address",
+        "card expiration date",
+        "social security number",
+        "credit card number",
+        "person name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.6429,
+        "recall": 0.8249,
+        "f1": 0.7227
+      },
+      "macro_f1_partial": 0.7536,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.3036,
+            "recall": 0.3552,
+            "f1": 0.3274
+          },
+          "exact": {
+            "precision": 0.1221,
+            "recall": 0.1429,
+            "f1": 0.1317
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.8765,
+            "recall": 0.9221,
+            "f1": 0.8987
+          },
+          "exact": {
+            "precision": 0.8765,
+            "recall": 0.9221,
+            "f1": 0.8987
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.9864,
+            "recall": 0.9416,
+            "f1": 0.9635
+          },
+          "exact": {
+            "precision": 0.9864,
+            "recall": 0.9416,
+            "f1": 0.9635
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "exact": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.5109,
+            "recall": 0.974,
+            "f1": 0.6703
+          },
+          "exact": {
+            "precision": 0.5,
+            "recall": 0.9531,
+            "f1": 0.6559
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.77,
+            "recall": 0.7586,
+            "f1": 0.7643
+          },
+          "exact": {
+            "precision": 0.77,
+            "recall": 0.7586,
+            "f1": 0.7643
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.6855,
+            "recall": 0.9693,
+            "f1": 0.8031
+          },
+          "exact": {
+            "precision": 0.6612,
+            "recall": 0.9349,
+            "f1": 0.7746
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.5876,
+            "recall": 0.9421,
+            "f1": 0.7238
+          },
+          "exact": {
+            "precision": 0.5773,
+            "recall": 0.9256,
+            "f1": 0.7111
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.2196,
+            "recall": 0.3011,
+            "f1": 0.254
+          },
+          "exact": {
+            "precision": 0.2196,
+            "recall": 0.3011,
+            "f1": 0.254
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333
+          },
+          "exact": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 1.0,
+            "recall": 0.9062,
+            "f1": 0.9508
+          },
+          "exact": {
+            "precision": 1.0,
+            "recall": 0.9062,
+            "f1": 0.9508
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 154,
+        "fp": 0,
+        "fn": 0,
+        "tn": 246
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.1102,
+        "ADDRESS:no_state": 0.4605,
+        "ADDRESS:no_zip": 0.7679,
+        "CARD_CVV:raw_digits": 0.9663,
+        "CARD_CVV:spoken_words": 0.8615,
+        "CARD_EXPIRATION:mm yy": 0.9524,
+        "CARD_EXPIRATION:mm/yy": 0.9444,
+        "CARD_EXPIRATION:mmyy": 0.9091,
+        "CARD_EXPIRATION:month words": 1.0,
+        "CARD_EXPIRATION:month yyyy": 0.9524,
+        "CARD_EXPIRATION:spoken_words": 0.85,
+        "CARD_NUMBER:dashed_digits": 1.0,
+        "CARD_NUMBER:grouped_digits": 1.0,
+        "CARD_NUMBER:mixed": 1.0,
+        "CARD_NUMBER:raw_digits": 1.0,
+        "CARD_NUMBER:spoken_words": 1.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 1.0,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.7368,
+        "DATE_OF_BIRTH:words": 1.0,
+        "MEMBER_ID:grouped_digits": 0.4516,
+        "MEMBER_ID:raw_digits": 0.8929,
+        "MEMBER_ID:spoken_words": 0.8947,
+        "PERSON_NAME:first": 0.9625,
+        "PERSON_NAME:full": 0.9758,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9623,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.8611,
+        "PROVIDER_NAME:": 0.3011,
+        "PROVIDER_NPI:grouped_digits": 0.8125,
+        "PROVIDER_NPI:raw_digits": 0.9655,
+        "PROVIDER_NPI:spoken_words": 0.8421,
+        "SSN:dashed": 0.8696,
+        "SSN:grouped_digits": 0.9444,
+        "SSN:raw_digits": 1.0,
+        "SSN:spoken_words": 0.8889
+      },
+      "seconds": 20.9
+    },
+    "all_fixes+tuned+rules_exclusive": {
+      "config": {
+        "threshold": 0.5,
+        "window_words": 120,
+        "stride_words": 90,
+        "batch_size": 16,
+        "strip": true,
+        "normalize": true,
+        "rules": true,
+        "rules_exclusive": true,
+        "label_set": "tuned"
+      },
+      "n_calls": 400,
+      "labels": [
+        "date of birth",
+        "doctor or clinic name",
+        "npi number",
+        "cvv security code",
+        "member id",
+        "telephone number",
+        "street address with city",
+        "card expiration date",
+        "social security number",
+        "payment card number",
+        "person's full name"
+      ],
+      "micro_partial_match": {
+        "precision": 0.7476,
+        "recall": 0.7928,
+        "f1": 0.7696
+      },
+      "macro_f1_partial": 0.7588,
+      "per_label": {
+        "ADDRESS": {
+          "support": 259,
+          "partial": {
+            "precision": 0.3462,
+            "recall": 0.1737,
+            "f1": 0.2314
+          },
+          "exact": {
+            "precision": 0.1462,
+            "recall": 0.0734,
+            "f1": 0.0977
+          }
+        },
+        "CARD_CVV": {
+          "support": 154,
+          "partial": {
+            "precision": 0.8765,
+            "recall": 0.9221,
+            "f1": 0.8987
+          },
+          "exact": {
+            "precision": 0.8765,
+            "recall": 0.9221,
+            "f1": 0.8987
+          }
+        },
+        "CARD_EXPIRATION": {
+          "support": 154,
+          "partial": {
+            "precision": 0.9864,
+            "recall": 0.9416,
+            "f1": 0.9635
+          },
+          "exact": {
+            "precision": 0.9864,
+            "recall": 0.9416,
+            "f1": 0.9635
+          }
+        },
+        "CARD_NUMBER": {
+          "support": 172,
+          "partial": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "exact": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "DATE_OF_BIRTH": {
+          "support": 192,
+          "partial": {
+            "precision": 0.5646,
+            "recall": 0.9792,
+            "f1": 0.7162
+          },
+          "exact": {
+            "precision": 0.5526,
+            "recall": 0.9583,
+            "f1": 0.701
+          }
+        },
+        "MEMBER_ID": {
+          "support": 203,
+          "partial": {
+            "precision": 0.873,
+            "recall": 0.2709,
+            "f1": 0.4135
+          },
+          "exact": {
+            "precision": 0.873,
+            "recall": 0.2709,
+            "f1": 0.4135
+          }
+        },
+        "PERSON_NAME": {
+          "support": 814,
+          "partial": {
+            "precision": 0.7692,
+            "recall": 0.9742,
+            "f1": 0.8596
+          },
+          "exact": {
+            "precision": 0.7507,
+            "recall": 0.9509,
+            "f1": 0.839
+          }
+        },
+        "PHONE_NUMBER": {
+          "support": 121,
+          "partial": {
+            "precision": 0.4588,
+            "recall": 0.9669,
+            "f1": 0.6223
+          },
+          "exact": {
+            "precision": 0.451,
+            "recall": 0.9504,
+            "f1": 0.6117
+          }
+        },
+        "PROVIDER_NAME": {
+          "support": 186,
+          "partial": {
+            "precision": 0.9512,
+            "recall": 0.629,
+            "f1": 0.7573
+          },
+          "exact": {
+            "precision": 0.9512,
+            "recall": 0.629,
+            "f1": 0.7573
+          }
+        },
+        "PROVIDER_NPI": {
+          "support": 80,
+          "partial": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333
+          },
+          "exact": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333
+          }
+        },
+        "SSN": {
+          "support": 64,
+          "partial": {
+            "precision": 1.0,
+            "recall": 0.9062,
+            "f1": 0.9508
+          },
+          "exact": {
+            "precision": 1.0,
+            "recall": 0.9062,
+            "f1": 0.9508
+          }
+        }
+      },
+      "pci_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 154,
+        "fp": 0,
+        "fn": 0,
+        "tn": 246
+      },
+      "pii_call_detection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      "recall_by_format": {
+        "ADDRESS:full": 0.0472,
+        "ADDRESS:no_state": 0.1974,
+        "ADDRESS:no_zip": 0.4286,
+        "CARD_CVV:raw_digits": 0.9663,
+        "CARD_CVV:spoken_words": 0.8615,
+        "CARD_EXPIRATION:mm yy": 0.9524,
+        "CARD_EXPIRATION:mm/yy": 0.9444,
+        "CARD_EXPIRATION:mmyy": 0.9091,
+        "CARD_EXPIRATION:month words": 1.0,
+        "CARD_EXPIRATION:month yyyy": 0.9524,
+        "CARD_EXPIRATION:spoken_words": 0.85,
+        "CARD_NUMBER:dashed_digits": 1.0,
+        "CARD_NUMBER:grouped_digits": 1.0,
+        "CARD_NUMBER:mixed": 1.0,
+        "CARD_NUMBER:raw_digits": 1.0,
+        "CARD_NUMBER:spoken_words": 1.0,
+        "DATE_OF_BIRTH:m/d/yyyy": 1.0,
+        "DATE_OF_BIRTH:mm dd yyyy": 1.0,
+        "DATE_OF_BIRTH:month d yyyy": 1.0,
+        "DATE_OF_BIRTH:month dd yyyy": 1.0,
+        "DATE_OF_BIRTH:spoken_words": 0.7895,
+        "DATE_OF_BIRTH:words": 1.0,
+        "MEMBER_ID:grouped_digits": 0.0484,
+        "MEMBER_ID:raw_digits": 0.3571,
+        "MEMBER_ID:spoken_words": 0.386,
+        "PERSON_NAME:first": 0.9725,
+        "PERSON_NAME:full": 0.9758,
+        "PHONE_NUMBER:dashed": 1.0,
+        "PHONE_NUMBER:grouped_digits": 0.9811,
+        "PHONE_NUMBER:raw_digits": 1.0,
+        "PHONE_NUMBER:spoken_words": 0.9167,
+        "PROVIDER_NAME:": 0.629,
+        "PROVIDER_NPI:grouped_digits": 0.8125,
+        "PROVIDER_NPI:raw_digits": 0.9655,
+        "PROVIDER_NPI:spoken_words": 0.8421,
+        "SSN:dashed": 0.8696,
+        "SSN:grouped_digits": 0.9444,
+        "SSN:raw_digits": 1.0,
+        "SSN:spoken_words": 0.8889
+      },
+      "seconds": 21.1
+    }
+  }
+}

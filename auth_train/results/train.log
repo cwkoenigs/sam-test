@@ -1,0 +1,54 @@
+[2026-10-14 12:20:36] device=mps train=20373 validation=2513 cache_model=/Users/sam/models/bert-base-uncased frozen_layers=11
+[2026-10-14 12:20:36] parameters total=109,484,547 trainable=7,680,771 frozen=101,803,776
+[2026-10-14 12:20:36] optimizer=Adam lr=3e-05 schedule=cosine_hard_restarts cycles=5 warmup_steps=1592 total_steps=31850 max_grad_norm=1.0
+[2026-10-14 12:21:03] epoch   1/50 train_loss=0.5075 val_loss=0.0236 val_acc=0.9940 val_f1=0.9952 lr=1.20e-05 clipped=80% 26.0s *best*
+[2026-10-14 12:21:20] epoch   2/50 train_loss=0.0049 val_loss=0.0004 val_acc=1.0000 val_f1=1.0000 lr=2.40e-05 clipped=5% 17.4s *best*
+[2026-10-14 12:21:36] epoch   3/50 train_loss=0.0005 val_loss=0.0001 val_acc=1.0000 val_f1=1.0000 lr=2.98e-05 clipped=1% 16.3s *best*
+[2026-10-14 12:21:53] epoch   4/50 train_loss=0.0002 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.82e-05 clipped=0% 16.8s *best*
+[2026-10-14 12:22:10] epoch   5/50 train_loss=0.0002 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.52e-05 clipped=1% 16.3s *best*
+[2026-10-14 12:22:26] epoch   6/50 train_loss=0.0001 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.10e-05 clipped=0% 16.0s *best*
+[2026-10-14 12:22:43] epoch   7/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.62e-05 clipped=0% 16.9s *best*
+[2026-10-14 12:23:00] epoch   8/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.13e-05 clipped=0% 16.6s *best*
+[2026-10-14 12:23:16] epoch   9/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=6.79e-06 clipped=0% 16.2s *best*
+[2026-10-14 12:23:33] epoch  10/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=3.16e-06 clipped=0% 16.6s *best*
+[2026-10-14 12:23:49] epoch  11/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=8.12e-07 clipped=0% 16.7s *best*
+[2026-10-14 12:24:06] epoch  12/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=3.00e-05 clipped=0% 16.0s *best*
+[2026-10-14 12:24:21] epoch  13/50 train_loss=0.0003 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.92e-05 clipped=0% 15.4s *best*
+[2026-10-14 12:24:37] epoch  14/50 train_loss=0.0008 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.68e-05 clipped=1% 15.7s *best*
+[2026-10-14 12:24:53] epoch  15/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.32e-05 clipped=0% 16.2s *best*
+[2026-10-14 12:25:09] epoch  16/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.87e-05 clipped=0% 15.9s *best*
+[2026-10-14 12:25:25] epoch  17/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.38e-05 clipped=0% 16.0s *best*
+[2026-10-14 12:25:41] epoch  18/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=8.97e-06 clipped=0% 16.0s *best*
+[2026-10-14 12:25:57] epoch  19/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=4.84e-06 clipped=0% 16.0s *best*
+[2026-10-14 12:26:13] epoch  20/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.81e-06 clipped=0% 15.9s *best*
+[2026-10-14 12:26:30] epoch  21/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.04e-07 clipped=0% 16.1s *best*
+[2026-10-14 12:26:46] epoch  22/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.98e-05 clipped=0% 16.0s *best*
+[2026-10-14 12:27:02] epoch  23/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.82e-05 clipped=0% 16.1s *best*
+[2026-10-14 12:27:18] epoch  24/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.52e-05 clipped=0% 16.1s *best*
+[2026-10-14 12:27:34] epoch  25/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.10e-05 clipped=0% 16.2s *best*
+[2026-10-14 12:27:51] epoch  26/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.62e-05 clipped=0% 16.2s *best*
+[2026-10-14 12:28:07] epoch  27/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.13e-05 clipped=0% 16.1s *best*
+[2026-10-14 12:28:23] epoch  28/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=6.79e-06 clipped=0% 15.8s *best*
+[2026-10-14 12:28:39] epoch  29/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=3.16e-06 clipped=0% 16.1s
+[2026-10-14 12:28:55] epoch  30/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=8.12e-07 clipped=0% 16.2s *best*
+[2026-10-14 12:29:12] epoch  31/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=3.00e-05 clipped=0% 16.3s *best*
+[2026-10-14 12:29:28] epoch  32/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.92e-05 clipped=0% 16.3s *best*
+[2026-10-14 12:29:44] epoch  33/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.68e-05 clipped=0% 16.3s *best*
+[2026-10-14 12:30:00] epoch  34/50 train_loss=0.0018 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.32e-05 clipped=1% 16.0s
+[2026-10-14 12:30:17] epoch  35/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.87e-05 clipped=0% 16.6s
+[2026-10-14 12:30:34] epoch  36/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.38e-05 clipped=0% 16.6s
+[2026-10-14 12:30:50] epoch  37/50 train_loss=0.0001 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=8.97e-06 clipped=0% 16.7s
+[2026-10-14 12:31:10] epoch  38/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=4.84e-06 clipped=0% 20.0s
+[2026-10-14 12:31:26] epoch  39/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.81e-06 clipped=0% 16.1s
+[2026-10-14 12:31:43] epoch  40/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.04e-07 clipped=0% 17.0s
+[2026-10-14 12:32:00] epoch  41/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.98e-05 clipped=0% 16.3s
+[2026-10-14 12:32:17] epoch  42/50 train_loss=0.0008 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.82e-05 clipped=1% 17.1s
+[2026-10-14 12:32:33] epoch  43/50 train_loss=0.0001 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.52e-05 clipped=0% 16.6s
+[2026-10-14 12:32:50] epoch  44/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=2.10e-05 clipped=0% 16.8s
+[2026-10-14 12:33:06] epoch  45/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.62e-05 clipped=0% 16.1s
+[2026-10-14 12:33:22] epoch  46/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=1.13e-05 clipped=0% 16.1s
+[2026-10-14 12:33:38] epoch  47/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=6.80e-06 clipped=0% 16.1s
+[2026-10-14 12:33:55] epoch  48/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=3.16e-06 clipped=0% 16.1s
+[2026-10-14 12:34:11] epoch  49/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=8.13e-07 clipped=0% 16.2s
+[2026-10-14 12:34:27] epoch  50/50 train_loss=0.0000 val_loss=0.0000 val_acc=1.0000 val_f1=1.0000 lr=0.00e+00 clipped=0% 16.6s
+[2026-10-14 12:34:28] done best_epoch=33 best_val_loss=0.0000 total=831.2s

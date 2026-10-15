@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+__pycache__/
+# large generated artifacts
+auth_train/cache/
+models/
+class_data/train.jsonl
+class_data/validation.jsonl
+class_data/test.jsonl
+class_train/cache/
+NER_data/train.jsonl
+NER_data/validation.jsonl
+NER_data/test.jsonl

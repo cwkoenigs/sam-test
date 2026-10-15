@@ -1,0 +1,90 @@
+{
+  "entity_types": {
+    "PERSON_NAME": {
+      "gliner": "person name",
+      "pii": true,
+      "pci": false
+    },
+    "PROVIDER_NAME": {
+      "gliner": "healthcare provider name",
+      "pii": false,
+      "pci": false
+    },
+    "PROVIDER_NPI": {
+      "gliner": "provider npi number",
+      "pii": false,
+      "pci": false
+    },
+    "DATE_OF_BIRTH": {
+      "gliner": "date of birth",
+      "pii": true,
+      "pci": false
+    },
+    "ADDRESS": {
+      "gliner": "street address",
+      "pii": true,
+      "pci": false
+    },
+    "SSN": {
+      "gliner": "social security number",
+      "pii": true,
+      "pci": false
+    },
+    "CARD_NUMBER": {
+      "gliner": "credit card number",
+      "pii": false,
+      "pci": true
+    },
+    "CARD_CVV": {
+      "gliner": "card security code",
+      "pii": false,
+      "pci": true
+    },
+    "CARD_EXPIRATION": {
+      "gliner": "card expiration date",
+      "pii": false,
+      "pci": true
+    },
+    "MEMBER_ID": {
+      "gliner": "member id number",
+      "pii": false,
+      "pci": false
+    },
+    "PHONE_NUMBER": {
+      "gliner": "phone number",
+      "pii": true,
+      "pci": false
+    }
+  },
+  "gliner_labels": [
+    "person name",
+    "healthcare provider name",
+    "provider npi number",
+    "date of birth",
+    "street address",
+    "social security number",
+    "credit card number",
+    "card security code",
+    "card expiration date",
+    "member id number",
+    "phone number"
+  ],
+  "gliner_to_label": {
+    "person name": "PERSON_NAME",
+    "healthcare provider name": "PROVIDER_NAME",
+    "provider npi number": "PROVIDER_NPI",
+    "date of birth": "DATE_OF_BIRTH",
+    "street address": "ADDRESS",
+    "social security number": "SSN",
+    "credit card number": "CARD_NUMBER",
+    "card security code": "CARD_CVV",
+    "card expiration date": "CARD_EXPIRATION",
+    "member id number": "MEMBER_ID",
+    "phone number": "PHONE_NUMBER"
+  },
+  "pci_types": [
+    "CARD_NUMBER",
+    "CARD_CVV",
+    "CARD_EXPIRATION"
+  ]
+}

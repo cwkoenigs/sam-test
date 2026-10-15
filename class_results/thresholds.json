@@ -1,0 +1,9 @@
+{
+  "BILLING": 0.05,
+  "CLAIM_STATUS": 0.35,
+  "COVERAGE": 0.05,
+  "COMPLAINTS": 0.4,
+  "PRIOR_AUTH": 0.05,
+  "NEMT": 0.05,
+  "TECHNICAL_ISSUE": 0.05
+}

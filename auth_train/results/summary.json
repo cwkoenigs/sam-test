@@ -1,0 +1,12 @@
+{
+  "epochs": 50,
+  "best_epoch": 33,
+  "best_val_loss": 1.4231112110468034e-10,
+  "final_train_loss": 0.0,
+  "final_val_loss": 0.0,
+  "final_val_accuracy": 1.0,
+  "final_val_macro_f1": 1.0,
+  "total_seconds": 831.2,
+  "model_best": "/Users/sam/Developer/sam-test/models/bert-auth-classifier/best",
+  "model_final": "/Users/sam/Developer/sam-test/models/bert-auth-classifier/final"
+}

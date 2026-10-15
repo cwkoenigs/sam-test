@@ -1,0 +1,21 @@
+{
+  "epochs": 20,
+  "best_epoch": 9,
+  "best_val_loss": 5.463630101403396e-05,
+  "final_epoch": 20,
+  "final_train_loss": 8e-06,
+  "final_val_loss": 0.000125,
+  "final_val_micro_f1": 0.999904,
+  "final_val_macro_f1": 0.999902,
+  "final_val_subset_accuracy": 0.9997,
+  "final_val_hamming_loss": 4.3e-05,
+  "final_val_primary_accuracy": 0.7507,
+  "final_lr_end_of_epoch": 0.0,
+  "final_mean_grad_norm": 0.0019,
+  "final_clipped_frac": 0.0,
+  "final_epoch_seconds": 117.6,
+  "final_device_memory_gb": 3.61,
+  "total_seconds": 2357.5,
+  "model_best": "/Users/sam/Developer/sam-test/models/roberta-call-classifier/best",
+  "model_final": "/Users/sam/Developer/sam-test/models/roberta-call-classifier/final"
+}

@@ -1,0 +1,32 @@
+[2026-10-14 13:22:36] device=mps train=80001 validation=10000 cache_model=/Users/sam/models/roberta-base frozen_layers=11 train_tokens=16578669
+[2026-10-14 13:22:37] parameters total=124,651,015 trainable=7,683,847 frozen=116,967,168
+[2026-10-14 13:22:37] loss=BCEWithLogitsLoss optimizer=Adam lr=3e-05 schedule=cosine_hard_restarts cycles=4 warmup_steps=2501 total_steps=50020 max_grad_norm=1.0
+[2026-10-14 13:52:38] device=mps train=80001 validation=10000 cache_model=/Users/sam/models/roberta-base frozen_layers=11 train_tokens=16578669
+[2026-10-14 13:52:38] parameters total=124,651,015 trainable=7,683,847 frozen=116,967,168
+[2026-10-14 13:52:38] loss=BCEWithLogitsLoss optimizer=Adam lr=3e-05 schedule=cosine_hard_restarts cycles=4 warmup_steps=2604 total_steps=52080 max_grad_norm=1.0 batch_size=32 max_tokens_per_batch=8192 steps_per_epoch=2604
+[2026-10-14 13:56:42] epoch   1/20 train_loss=0.2105 val_loss=0.0081 micro_f1=0.9988 macro_f1=0.9988 subset_acc=0.9965 primary_acc=0.7222 lr=3.00e-05 clipped=24% 242.7s *best*
+[2026-10-14 14:05:25] device=mps train=80001 validation=10000 cache_model=/Users/sam/models/roberta-base frozen_layers=11 train_tokens=16578669
+[2026-10-14 14:05:25] parameters total=124,651,015 trainable=7,683,847 frozen=116,967,168
+[2026-10-14 14:05:25] fixed batch shapes (rows x padded_len): [(16, 512), (18, 448), (21, 384), (25, 320), (32, 128), (32, 192), (32, 256)]
+[2026-10-14 14:05:25] loss=BCEWithLogitsLoss optimizer=Adam lr=3e-05 schedule=cosine_hard_restarts cycles=4 warmup_steps=2689 total_steps=53780 max_grad_norm=1.0 batch_size=32 max_tokens_per_batch=8192 length_bucket=64 steps_per_epoch=2689
+[2026-10-14 14:07:33] epoch   1/20 train_loss=0.2084 val_loss=0.0089 micro_f1=0.9991 macro_f1=0.9991 subset_acc=0.9974 primary_acc=0.7467 lr=3.00e-05 clipped=23% 128.3s gpu_mem=3.61GB *best*
+[2026-10-14 14:09:31] epoch   2/20 train_loss=0.0051 val_loss=0.0016 micro_f1=0.9996 macro_f1=0.9996 subset_acc=0.9989 primary_acc=0.7160 lr=2.68e-05 clipped=2% 117.0s gpu_mem=3.61GB *best*
+[2026-10-14 14:11:29] epoch   3/20 train_loss=0.0014 val_loss=0.0008 micro_f1=0.9997 macro_f1=0.9997 subset_acc=0.9993 primary_acc=0.7325 lr=1.87e-05 clipped=2% 117.9s gpu_mem=3.61GB *best*
+[2026-10-14 14:13:26] epoch   4/20 train_loss=0.0006 val_loss=0.0003 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7447 lr=8.97e-06 clipped=1% 117.2s gpu_mem=3.61GB *best*
+[2026-10-14 14:15:23] epoch   5/20 train_loss=0.0003 val_loss=0.0003 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7343 lr=1.81e-06 clipped=0% 117.3s gpu_mem=3.61GB *best*
+[2026-10-14 14:17:20] epoch   6/20 train_loss=0.0005 val_loss=0.0005 micro_f1=0.9997 macro_f1=0.9997 subset_acc=0.9991 primary_acc=0.7463 lr=2.98e-05 clipped=1% 116.8s gpu_mem=3.61GB
+[2026-10-14 14:19:18] epoch   7/20 train_loss=0.0005 val_loss=0.0002 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9996 primary_acc=0.7530 lr=2.52e-05 clipped=3% 117.7s gpu_mem=3.61GB *best*
+[2026-10-14 14:21:15] epoch   8/20 train_loss=0.0003 val_loss=0.0002 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9996 primary_acc=0.7582 lr=1.62e-05 clipped=2% 117.3s gpu_mem=3.61GB *best*
+[2026-10-14 14:23:13] epoch   9/20 train_loss=0.0001 val_loss=0.0001 micro_f1=1.0000 macro_f1=1.0000 subset_acc=0.9999 primary_acc=0.7216 lr=6.80e-06 clipped=1% 118.0s gpu_mem=3.61GB *best*
+[2026-10-14 14:25:12] epoch  10/20 train_loss=0.0001 val_loss=0.0001 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7260 lr=8.13e-07 clipped=0% 118.3s gpu_mem=3.61GB
+[2026-10-14 14:27:09] epoch  11/20 train_loss=0.0003 val_loss=0.0004 micro_f1=0.9997 macro_f1=0.9997 subset_acc=0.9992 primary_acc=0.7479 lr=2.92e-05 clipped=2% 117.3s gpu_mem=3.61GB
+[2026-10-14 14:29:06] epoch  12/20 train_loss=0.0003 val_loss=0.0003 micro_f1=0.9998 macro_f1=0.9998 subset_acc=0.9994 primary_acc=0.7434 lr=2.32e-05 clipped=2% 117.3s gpu_mem=3.61GB
+[2026-10-14 14:31:03] epoch  13/20 train_loss=0.0001 val_loss=0.0002 micro_f1=0.9998 macro_f1=0.9998 subset_acc=0.9994 primary_acc=0.7380 lr=1.38e-05 clipped=1% 116.9s gpu_mem=3.61GB
+[2026-10-14 14:33:00] epoch  14/20 train_loss=0.0001 val_loss=0.0001 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7348 lr=4.84e-06 clipped=1% 117.2s gpu_mem=3.61GB
+[2026-10-14 14:34:58] epoch  15/20 train_loss=0.0000 val_loss=0.0001 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7294 lr=2.05e-07 clipped=0% 117.3s gpu_mem=3.61GB
+[2026-10-14 14:36:54] epoch  16/20 train_loss=0.0004 val_loss=0.0002 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9996 primary_acc=0.7543 lr=2.82e-05 clipped=3% 116.7s gpu_mem=3.61GB
+[2026-10-14 14:38:51] epoch  17/20 train_loss=0.0002 val_loss=0.0003 micro_f1=0.9998 macro_f1=0.9998 subset_acc=0.9994 primary_acc=0.7569 lr=2.10e-05 clipped=1% 116.5s gpu_mem=3.61GB
+[2026-10-14 14:40:47] epoch  18/20 train_loss=0.0001 val_loss=0.0001 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7482 lr=1.13e-05 clipped=1% 116.6s gpu_mem=3.61GB
+[2026-10-14 14:42:45] epoch  19/20 train_loss=0.0000 val_loss=0.0001 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7517 lr=3.16e-06 clipped=0% 117.4s gpu_mem=3.61GB
+[2026-10-14 14:44:42] epoch  20/20 train_loss=0.0000 val_loss=0.0001 micro_f1=0.9999 macro_f1=0.9999 subset_acc=0.9997 primary_acc=0.7507 lr=0.00e+00 clipped=0% 117.6s gpu_mem=3.61GB
+[2026-10-14 14:44:42] done best_epoch=9 best_val_loss=0.0001 total=2357.5s

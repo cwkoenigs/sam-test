@@ -1,0 +1,53 @@
+{
+  "model": "/Users/sam/Developer/sam-test/models/bert-auth-classifier/best",
+  "data": "/Users/sam/Developer/sam-test/auth_data/test.jsonl",
+  "n_examples": 2539,
+  "loss": 2.8170762471247995e-10,
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "per_class": {
+    "ID_AUTH": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 800.0
+    },
+    "NO_AUTH": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1539.0
+    },
+    "OTHER_AUTH": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "ID_AUTH",
+      "NO_AUTH",
+      "OTHER_AUTH"
+    ],
+    "rows_true_cols_pred": [
+      [
+        800,
+        0,
+        0
+      ],
+      [
+        0,
+        1539,
+        0
+      ],
+      [
+        0,
+        0,
+        200
+      ]
+    ]
+  },
+  "seconds": 8.6
+}

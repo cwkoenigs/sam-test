@@ -1,0 +1,21 @@
+{
+  "cache": "/Users/sam/Developer/sam-test/auth_train/cache",
+  "results": "/Users/sam/Developer/sam-test/auth_train/results",
+  "model_out": "/Users/sam/Developer/sam-test/models/bert-auth-classifier",
+  "epochs": 50,
+  "batch_size": 32,
+  "eval_batch_size": 128,
+  "lr": 3e-05,
+  "warmup_ratio": 0.05,
+  "restart_cycles": 5,
+  "max_grad_norm": 1.0,
+  "seed": 42,
+  "device": "mps",
+  "limit": 0,
+  "steps_per_epoch": 637,
+  "total_steps": 31850,
+  "warmup_steps": 1592,
+  "optimizer": "Adam",
+  "loss": "CrossEntropyLoss",
+  "scheduler": "cosine_with_hard_restarts_with_warmup"
+}

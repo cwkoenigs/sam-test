@@ -1,0 +1,21 @@
+[project]
+name = "sam-test"
+version = "0.1.0"
+description = "A scratch project."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "accelerate>=1.10.1",
+    "datasets>=4.5.0",
+    "evaluate>=0.4.6",
+    "gliner>=0.2.26",
+    "matplotlib>=3.9.4",
+    "mlx>=0.29.3",
+    "np>=1.0.2",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "pydantic>=2.13.5",
+    "scikit-learn>=1.6.1",
+    "torch>=2.8.0",
+    "transformers>=4.57.6",
+]
